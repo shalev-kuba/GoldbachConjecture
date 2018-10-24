@@ -1,31 +1,31 @@
 import java.math.BigInteger;
 import java.util.Iterator;
 
-public class EvenNumbersIterator implements Iterable<T>, Iterator<E> {
+public class EvenNumbersIterator implements Iterable<BigInteger>, Iterator<BigInteger> {
 	
-	BigInteger start;
-	BigInteger end;
+	BigInteger current;
+	BigInteger d;
 	
-	public EvenNumbersIterator(BigInteger end) {
-		this.start = BigInteger.valueOf(2);
-		this.end = end;
+	public EvenNumbersIterator(BigInteger start, BigInteger d) {
+		this.current = start;
+		this.d = d;
 	}
 	
 	@Override
 	public boolean hasNext() {
-		return start.compareTo(end) <= 0;
+		return true;
 	}
 
 	@Override
-	public E next() {
-		// TODO Auto-generated method stub
-		return null;
+	public BigInteger next() {
+		BigInteger returnValue = current;
+		current = current.add(d);
+		return returnValue;
 	}
 
 	@Override
-	public Iterator<T> iterator() {
-		// TODO Auto-generated method stub
-		return null;
+	public Iterator<BigInteger> iterator() {
+		return this;
 	}
 	
 }
