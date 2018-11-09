@@ -22,13 +22,6 @@ public class EvenNumbersIterator implements Iterable<BigInteger>, Iterator<BigIn
 		current = current.add(d);
 		return returnValue;
 	}
-	
-	public void anotherCheck() {
-	}
-		
-	public void learnHowWorkWithGitHub() {
-		// Can delete this function
-	}
 
 	@Override
 	public Iterator<BigInteger> iterator() {
