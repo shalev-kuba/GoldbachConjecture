@@ -26,6 +26,10 @@ public class EvenNumbersIterator implements Iterable<BigInteger>, Iterator<BigIn
 		current = current.add(d);
 		return returnValue;
 	}
+	
+	public void anotherCheck() {
+		
+	}
 
 	@Override
 	public Iterator<BigInteger> iterator() {
