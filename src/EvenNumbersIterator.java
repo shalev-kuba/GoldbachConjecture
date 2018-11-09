@@ -27,7 +27,4 @@ public class EvenNumbersIterator implements Iterable<BigInteger>, Iterator<BigIn
 	public Iterator<BigInteger> iterator() {
 		return this;
 	}
-	
-	
-	// last check
 }
