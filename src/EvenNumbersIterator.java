@@ -15,6 +15,10 @@ public class EvenNumbersIterator implements Iterable<BigInteger>, Iterator<BigIn
 	public boolean hasNext() {
 		return true;
 	}
+	
+	public void learnHowWorkWithGit() {
+		// can delete this function
+	}
 
 	@Override
 	public BigInteger next() {
